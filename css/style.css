@@ -62,7 +62,7 @@
   top: 12px; /* Sesuaikan nilai ini sesuai kebutuhan */
   left: 50%;
   transform: translateX(-50%);
-  width: 60px; /* Sesuaikan ukuran ikon */
+  width: 60%; /* Sesuaikan ukuran ikon */
   height: auto;
   z-index: 1; /* Pastikan PNG berada di atas ikon flaticon */
 }
