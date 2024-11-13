@@ -568,12 +568,24 @@ pre {
     .container {
       max-width: 1140px; } }
 
+
+
+
 .container-fluid {
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto; }
+
+
+  /* Untuk layar dengan lebar maksimal 768px */
+@media (max-width: 768px) {
+  .container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
 
 .row {
   display: -webkit-box;
