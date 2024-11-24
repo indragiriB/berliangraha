@@ -36,11 +36,11 @@ a.navbar-brand {
 		flex-wrap: nowrap; /* Pastikan tetap satu baris pada layar kecil */
 	}
 	a.navbar-brand {
-		font-size: 30px; /* Ukuran teks lebih kecil */
+		font-size: 20px; /* Ukuran teks lebih kecil */
 	}
 	.social-icon {
-		width: 32px;
-		height: 32px; /* Ukuran ikon lebih kecil */
+		width: 22px;
+		height: 22px; /* Ukuran ikon lebih kecil */
 	}
 
 
