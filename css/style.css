@@ -486,6 +486,156 @@ pre {
   margin-right: -15px;
   margin-left: -15px; }
 
+
+
+
+
+.dark-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4); /* Adjust opacity as needed */
+  z-index: 1;
+}
+.owl-carousel .owl-nav,
+.owl-carousel .owl-dots {
+    display: none !important;
+}
+
+/* Style untuk teks */
+a.navbar-brand {
+	font-size: 28px;
+	font-weight: bold;
+	white-space: nowrap;
+}
+
+/* Style untuk ikon sosial */
+.social-icon {
+	width:34px;
+	height: 34px;
+  margin-bottom: 15px;
+}
+
+.row {
+	flex-wrap: nowrap; /* Mencegah elemen berpindah ke baris baru */
+}
+
+
+@media (max-width: 768px) {
+	.row {
+		flex-wrap: nowrap; /* Pastikan tetap satu baris pada layar kecil */
+	}
+	a.navbar-brand {
+		font-size: 20px; /* Ukuran teks lebih kecil */
+	}
+	.social-icon {
+		width: 22px;
+		height: 22px; /* Ukuran ikon lebih kecil */
+	}
+
+
+
+
+.work {
+  position: relative;
+}
+.desc {
+  position: relative;
+  z-index: 2;
+}
+/* Memastikan bahwa elemen tidak melebihi lebar layar */
+/* Pastikan elemen tidak melampaui lebar layar */
+.ftco-section {
+  overflow-x: hidden;
+}
+
+/* Mengatur kontainer agar selalu berada di tengah dan responsif */
+.container {
+  max-width: 100%;
+  padding: 0 15px; /* Tambahkan padding untuk membuatnya lebih responsif */
+}
+
+/* Atur baris agar konten tetap di tengah */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Pastikan setiap kolom menggunakan lebar penuh pada layar kecil */
+.col-md-4, .col-lg-4 {
+  max-width: 100%; /* Pastikan kolom menyesuaikan lebar */
+  flex: 0 0 100%; /* Mengatur setiap kolom agar mengambil 100% lebar pada layar kecil */
+}
+
+/* Khusus untuk layar besar, atur ulang layout kolom */
+@media (min-width: 768px) {
+  .col-md-4, .col-lg-4 {
+      max-width: 33.333%; /* Kolom untuk 3 kolom di layar besar */
+      flex: 0 0 33.333%;
+  }
+}
+/* Atur posisi gambar PNG agar muncul di atas ikon flaticon */
+.icon {
+  position: relative;
+}
+
+.icon .custom-icon {
+  position: absolute;
+  top: 12px; /* Sesuaikan nilai ini sesuai kebutuhan */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60%; /* Sesuaikan ukuran ikon */
+  height: auto;
+  z-index: 1; /* Pastikan PNG berada di atas ikon flaticon */
+}
+
+/* Sembunyikan ikon flaticon jika tidak ingin terlihat di belakang PNG */
+.icon .flaticon-bank {
+  opacity: 0;
+}
+/* Style untuk menempatkan teks di tengah */
+.slider-item {
+  position: relative;
+}
+
+.centered-text-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  text-align: center;
+  color: #fff;
+}
+
+.yellow-text {
+  color: #ffcc00; /* Warna kuning untuk h2 */
+  font-size: 2rem; /* Ukuran font h2 */
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.centered-text {
+  font-size: 1.5rem; /* Ukuran teks utama */
+  font-weight: bold;
+  padding: 0 10px; /* Padding agar tidak terlalu mepet */
+}
+
+@media (max-width: 768px) {
+  .yellow-text {
+      font-size: 1.5rem; /* Ukuran font h2 lebih kecil pada layar kecil */
+  }
+  .centered-text {
+      font-size: 1rem; /* Ukuran teks lebih kecil pada layar kecil */
+  }
+}
+
+
+
+
 .no-gutters {
   margin-right: 0;
   margin-left: 0; }
@@ -9845,146 +9995,3 @@ textarea.form-control {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
-
-.dark-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.4); /* Adjust opacity as needed */
-  z-index: 1;
-}
-.owl-carousel .owl-nav,
-.owl-carousel .owl-dots {
-    display: none !important;
-}
-
-/* Style untuk teks */
-a.navbar-brand {
-	font-size: 28px;
-	font-weight: bold;
-	white-space: nowrap;
-}
-
-/* Style untuk ikon sosial */
-.social-icon {
-	width:34px;
-	height: 34px;
-  margin-bottom: 15px;
-}
-
-.row {
-	flex-wrap: nowrap; /* Mencegah elemen berpindah ke baris baru */
-}
-
-
-@media (max-width: 768px) {
-	.row {
-		flex-wrap: nowrap; /* Pastikan tetap satu baris pada layar kecil */
-	}
-	a.navbar-brand {
-		font-size: 20px; /* Ukuran teks lebih kecil */
-	}
-	.social-icon {
-		width: 22px;
-		height: 22px; /* Ukuran ikon lebih kecil */
-	}
-
-
-
-
-.work {
-  position: relative;
-}
-.desc {
-  position: relative;
-  z-index: 2;
-}
-/* Memastikan bahwa elemen tidak melebihi lebar layar */
-/* Pastikan elemen tidak melampaui lebar layar */
-.ftco-section {
-  overflow-x: hidden;
-}
-
-/* Mengatur kontainer agar selalu berada di tengah dan responsif */
-.container {
-  max-width: 100%;
-  padding: 0 15px; /* Tambahkan padding untuk membuatnya lebih responsif */
-}
-
-/* Atur baris agar konten tetap di tengah */
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-/* Pastikan setiap kolom menggunakan lebar penuh pada layar kecil */
-.col-md-4, .col-lg-4 {
-  max-width: 100%; /* Pastikan kolom menyesuaikan lebar */
-  flex: 0 0 100%; /* Mengatur setiap kolom agar mengambil 100% lebar pada layar kecil */
-}
-
-/* Khusus untuk layar besar, atur ulang layout kolom */
-@media (min-width: 768px) {
-  .col-md-4, .col-lg-4 {
-      max-width: 33.333%; /* Kolom untuk 3 kolom di layar besar */
-      flex: 0 0 33.333%;
-  }
-}
-/* Atur posisi gambar PNG agar muncul di atas ikon flaticon */
-.icon {
-  position: relative;
-}
-
-.icon .custom-icon {
-  position: absolute;
-  top: 12px; /* Sesuaikan nilai ini sesuai kebutuhan */
-  left: 50%;
-  transform: translateX(-50%);
-  width: 60%; /* Sesuaikan ukuran ikon */
-  height: auto;
-  z-index: 1; /* Pastikan PNG berada di atas ikon flaticon */
-}
-
-/* Sembunyikan ikon flaticon jika tidak ingin terlihat di belakang PNG */
-.icon .flaticon-bank {
-  opacity: 0;
-}
-/* Style untuk menempatkan teks di tengah */
-.slider-item {
-  position: relative;
-}
-
-.centered-text-wrapper {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-  text-align: center;
-  color: #fff;
-}
-
-.yellow-text {
-  color: #ffcc00; /* Warna kuning untuk h2 */
-  font-size: 2rem; /* Ukuran font h2 */
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-.centered-text {
-  font-size: 1.5rem; /* Ukuran teks utama */
-  font-weight: bold;
-  padding: 0 10px; /* Padding agar tidak terlalu mepet */
-}
-
-@media (max-width: 768px) {
-  .yellow-text {
-      font-size: 1.5rem; /* Ukuran font h2 lebih kecil pada layar kecil */
-  }
-  .centered-text {
-      font-size: 1rem; /* Ukuran teks lebih kecil pada layar kecil */
-  }
-}
